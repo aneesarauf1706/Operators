@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+class Count
+{
+	int n;
+	public:
+		Count()
+		{
+			n=0;
+		}
+		void Show()
+		{
+			cout<<n;
+		}
+		void operator++()
+		{
+			n=n+1;
+		}
+		void operator++(int)
+		{
+			n=n+1;
+		}
+};
+int main()
+{
+	Count c;
+	c++;
+	++c;
+    c.Show();
+}
